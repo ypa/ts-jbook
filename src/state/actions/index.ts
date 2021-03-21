@@ -1,4 +1,3 @@
-import { DeclareExportDeclaration } from 'jscodeshift';
 import { ActionType } from '../action-types';
 
 interface MoveCellAction {
@@ -32,6 +31,6 @@ interface UpdateCellAction {
 
 export type Action =
   MoveCellAction
-  | DeclareExportDeclaration
+  | DeleteCellAction
   | InsertCellBeforeAction
   | UpdateCellAction;
