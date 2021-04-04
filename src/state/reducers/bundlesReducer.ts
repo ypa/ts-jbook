@@ -1,4 +1,3 @@
-import produce from 'immer';
 import { ActionType } from '../action-types';
 import { Action } from '../actions';
 
@@ -12,7 +11,7 @@ interface BundlesState {
 
 const initialState: BundlesState = {};
 
-const reducer = produce((state: BundlesState = initialState, action: Action): BundlesState => {
+const reducer = (state: BundlesState = initialState, action: Action): BundlesState => {
   switch (action.type) {
     case ActionType.BUNDLE_START:
       state[action.payload.cellId] = {
@@ -31,6 +30,6 @@ const reducer = produce((state: BundlesState = initialState, action: Action): Bu
     default:
       return state;
   }
-});
+};
 
 export default reducer;
