@@ -1,11 +1,13 @@
 {
   "name": "@jsnote-ypa/local-client",
   "version": "0.1.0",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "build"
   ],
-  "dependencies": {
+  "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@monaco-editor/react": "3.7.5",
     "@testing-library/jest-dom": "^5.11.9",

@@ -2,6 +2,9 @@
   "name": "@jsnote-ypa/local-api",
   "version": "1.0.0",
   "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist"
   ],
